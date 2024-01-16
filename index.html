@@ -1,0 +1,293 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+  <title>Frontend Mentor |[KANNAN]</title>
+</head>
+<style>
+  @import url('https://fonts.googleapis.com/css2?family=Black+Ops+One&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Raleway:ital,wght@0,100..900;1,100..900&family=Rubik+Doodle+Shadow&display=swap');
+  *{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Raleway;
+  }
+    .main{
+      display: flex;
+      flex-direction: column;
+      height:100vh;
+      width: 100%;
+      background-color: hsl(229, 57%, 11%);
+      justify-content: end;
+    }
+    .img1{
+      width: 100%;
+      height: 52vh;
+    }
+    .main1{
+      display: flex;
+      flex-direction: row;
+      flex-wrap: wrap;
+      flex-direction: row;
+      justify-content: center;
+      column-gap: 40px;
+      margin-bottom: -100px;
+      row-gap: 20px;
+      align-items: end;
+    }
+    .con1{
+      height:190px ;
+      width:230px ;
+      background-color: hsl(228, 56%, 26%);
+      z-index: 3;
+      border-radius: 10px 90px 10px 10px;
+    }
+    .con2{
+      height:150px ;
+      width:480px ;
+      background-color: hsl(228, 56%, 26%);
+      border-radius: 10px;
+      z-index: 3;
+      display: flex;
+      flex-direction: column;
+      align-content: center;
+      justify-content: center;
+    }
+    .img2{
+      width:150px ;
+      height:45px ;
+    }
+    .con1{
+      display: flex;
+      flex-direction: column;
+      row-gap: 30px;
+      padding: 40px;
+    }
+    .ico{
+      display: flex;
+      flex-direction: row;
+      flex-wrap: nowrap;
+      column-gap: 15px;
+    }
+    .ico1{
+      background-color: hsl(229, 57%, 11%);
+      height:45px ;
+      width: 45px;
+      padding: 11px;
+      border-radius: 10px;
+      cursor: pointer;
+    }
+    .con2{
+      display: flex;
+      flex-direction: column;
+      row-gap: 10px;
+      flex-wrap: wrap;
+      padding: 10px;
+      position: relative;
+      z-index: 1;
+    }
+    .text1{
+      letter-spacing: 1px;
+      color: #ffff;
+    }
+    .txt2{
+      font-size: 17px;
+    }
+    .txt3{
+      font-size: 18px;
+    }
+    .txt4{
+      font-size: 18px;
+      margin-top: 20px;
+    }
+    .range{
+      height: 18px;
+      width: 85%;
+      border-radius: 20px;
+      background-color: hsl(229, 57%, 11%);
+      position: relative;
+      z-index: -1;
+      display: flex;
+      align-items: center;
+    }
+    .ran1{
+      height: 16px;
+      width: 80%;
+      border-radius: 20px;
+      background:linear-gradient(hsl(6, 100%, 80%) , hsl(335, 100%, 65%));
+     position: absolute;
+     z-index: 1;
+     display: flex;
+     justify-content: end;
+     align-items: center;
+     margin-left: 2px;
+    }
+    .ran2{
+     height: 12px;
+      width: 12px;
+      margin-right: 2px;
+      border-radius: 50%;
+      background-color: #ffff;
+      z-index: 2;   
+    }
+    .nam1{
+      display: flex;
+      justify-content: space-between;
+      max-width: 450px;
+    }
+    .nam2,.nam3{
+      color: #ffff;
+      font-size: 12px;
+    }
+    .box{
+      border-radius: 10px;
+      height:58px ;
+      width:155px ;
+      background-color: #ffff;
+      right: 39%;
+      top: 54%;
+      position: absolute;
+      z-index: 10;
+      text-align: center;
+      padding-top: 20px;
+    }
+    @media screen and (min-width:770px) {
+      .trian{  
+      display: block;
+      position: absolute;
+      bottom: -16px;
+      right: 0;
+      border-left: 30px solid transparent;
+      border-top: 25px solid #ffff;
+    }
+    .box{ 
+     border-radius: 10px;
+     height:58px ;
+     width:155px ;
+     background-color: #ffff;
+     right: 7%;
+     top: 40%;
+     position: absolute;
+     z-index: 1;
+     text-align: center;
+     padding-top: 20px; 
+   }  
+    }
+    @media screen and (min-width:790px)  { 
+      .box{
+      height:58px ;
+      width:155px ;
+      right: 15%;
+      top: 40%;
+    }
+    }
+    @media screen and (min-width:984px)  {
+      .box{
+      height:58px ;
+      width:155px ;
+      right: 25%;
+      top: 40%;
+    }
+    }
+    @media screen and (min-width:1368px)  {
+      .box{
+      height:58px ;
+      width:155px ;
+      right: 30%;
+      top: 40%;
+    }
+    }
+    @media screen and (min-width:1740px)  {
+      .box{
+      height:58px ;
+      width:155px ;
+      right: 32%;
+      top: 40%;
+    }
+    }
+    @media screen and (max-width:769px)  {
+      .main{
+      display: flex;
+      flex-direction: column;
+      height:100vh;
+      width: 100%;
+      background-color: hsl(229, 57%, 11%);
+      background-image: url(images/bg-mobile.png);
+      background-repeat: no-repeat;
+      background-size: cover;
+      justify-content: end;
+    }
+    .img1{
+      opacity: 0;
+    }
+  }
+  @media screen and (max-width:450px)  {
+    .box{
+      height:65px ;
+      width:155px ;
+      right: 32%;
+      top: 57%;
+    }
+  }
+  @media screen and (max-width:320px)  {
+    .box{
+      height:65px ;
+      width:155px ;
+      right: 28%;
+      top: 60%;
+    }
+  }
+  .attribution { font-size: 11px; text-align: center;}
+    .attribution a { color: hsl(228, 45%, 44%); }
+</style>
+<body>
+   <div class="main">
+       <div class="main1">
+           <div class="con1">
+                 <img src="images/logo.svg" alt="icon" class="img2">
+                      <div class="ico">
+                          <div class="ico1">
+                             <img src="images/icon-document.svg" alt="icon" class="img3">
+                          </div>
+                          <div class="ico1">
+                             <img src="images/icon-folder.svg" alt="icon" class="img3">
+                         </div>
+                         <div class="ico1">
+                             <img src="images/icon-upload.svg" alt="icon" class="img3">
+                         </div> 
+                      </div> 
+             </div>  
+          <div class="con2">
+             <div class="text1">
+              You’ve used <strong> <span class="txt2">8</span><span class="txt3">1</span><span class="txt4">5</span> GB</strong> of your storage
+             </div>
+             <div class="range">
+              <div class="ran1">
+                  <div class="ran2"></div>
+              </div>
+             </div>
+
+             <div class="nam1">
+               <div class="nam2">
+                  0 GB
+               </div>
+               <div class="nam3">
+                  1000 GB
+               </div>
+             </div>
+        </div>
+        <div class="box">
+          <strong> <span class="txt2">8</span><span class="txt3">1</span><span class="txt4">5</span> GB</strong> Left
+          <div class="trian"></div>
+        </div>
+      </div>
+    <img src="images/bg-desktop.png" alt="" style="align-items: end;" class="img1">
+  </div>
+  <div class="attribution">
+    Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
+    Coded by <a href="#">KANNAN AL</a>.
+  </div>
+</body>
+</html>
